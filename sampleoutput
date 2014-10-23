@@ -1,0 +1,18 @@
+SPIM Version 6.1 of January 16, 1998
+Copyright 1990-1997 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+See the file README for a full copyright notice.
+Loaded: /afs/ir.stanford.edu/class/ee182/packages/spim-6.1/lib/trap.handler
+How many elements to be sorted?
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+Enter next element:
+The sorted list is:
+-1000 -600 -135 -1 0 4 15 30 100 1500 

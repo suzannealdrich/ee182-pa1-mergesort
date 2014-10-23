@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>EE182 - Programming Assignment #1</title>
+</head>
+<body bgcolor=#ffe5bf>
+
+<hr size=5 width=100%>
+<center>
+<H1>EE182 - Programming Assignment #1</H1><p>
+<H2>Due: Thursday, October 14, 1999 11:59 PM</H2>
+</center>
+<hr size=5 width=100%>
+<p>
+
+<h3>Goals:</h3>
+This assignment is intended to familiarize you with the SPIM
+environment for later assignments; to test your understanding of pointer
+implementations and procedure call conventions.
+
+<h3>Your task:</h3>
+Implement mergesort using the MIPS instruction set outlined in the
+SPIM documentation and in lecture.<p>
+
+Look at <A HREF="mergesort.c">mergesort.c</a> for a C version of the mergesort
+routine.  Your job is to add the required assembly code to the skeleton file,
+<A HREF="mergesort.s"> mergesort.s</a>, such that the assembly code has the
+same functionality as the C code. The skeleton file can be copied to
+your local directory:<p>
+<code> cp /usr/class/ee182/WWW/Projects/PA1/mergesort.s .</code><p>
+
+Comments within mergesort.s clearly specify the functionality that needs
+to be added.<p>
+
+<h3>Guidelines:</h3>
+<ul>
+  <li>Read Chapter 3 (3.1 - 3.11) before you start. Be sure to follow the
+      procedure call convention detailed in Appendix A.6. You may also
+      find Appendix A.9 and A.10 very helpful.
+  <li>Make sure that all function arguments are passed according to the
+      established convention! The arguments shall be passed in the following
+      order: pointer to the first element of the array, left index,
+      right index. The left and right indices mark off the portion of the
+      array that will be sorted by the call to the mergesort routine.
+      The first call to mergesort will pass <code>0</code> and
+      <code>num_of_elements - 1</code> as the left and right indices
+      respectively.
+  <li>Follow the register and procedure call conventions
+      (i.e., which registers are intended for what use and the sequence of
+      steps in a procedure call).  Appendix A of the textbook is a good
+      reference in this respect.
+      Compilers have to follow the conventions so you should, too.<br></li>
+</ul>
+
+<h3>Hints:</h3>
+<ul>
+<li>Be sure you have a good understanding of how a procedure call works
+    before you attempt to code.<br>
+<li>The assignment is reasonably straightforward and shouldn't take too
+    much more than 80 or 90 lines of assembly.  If you have much more
+    than that then maybe you should look at it again.
+<li>You can work on any platform you like, but it is your responsibility to
+    make sure your project will run on the leland workstations, which is the
+    <b>only</b> platform we support.
+
+
+</ul>
+
+<h3>Requirements:</h3>
+<ul>
+  <li>By 10/14/99 11:59 PM, you should electronically submit your project. The
+      directory you submit must have a <code>README</code> file and your
+      <code>mergesort.s</code>
+      <br>Please see the <a href = "../submit.html">submission instructions</a>
+      for details.
+  <li>The TAs will be testing your code using the spim that runs on the UNIX
+      machines at Sweet Hall. 
+      <em>Use spimsal and other platforms at your own risk.</em>
+      It is <b>your</b> responsibility to make sure that your
+      code runs correctly on the Sparc stations at Sweet Hall.
+  <li>Add code to your local copy of mergesort.s, but DO NOT CHANGE any of the
+      ORIGINAL mergesort.s code. If you think there's a bug, please email the
+      TAs before you make any changes.
+  <li>We should be able to run your program by issuing the command<p>
+      <code>spim -file mergesort.s < inputfile > outputfile</code><p>
+      where <code>inputfile</code> is a file representing an array of integers.
+      The first number in the file specifies the number of integers in the
+      array. The subsequent integers are the actual array elements.
+      For example, this <a href = "sampleinput"><code>inputfile</code></a>
+      should generates this <a href ="sampleoutput"><code>outputfile</code></a>
+      with the above command.
+</ul>
+
+Good luck and happy sorting!<p>
+
+<hr size=5 width=100%>
+
+</html>

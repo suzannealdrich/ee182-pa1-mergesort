@@ -1,0 +1,11 @@
+Preliminary grading guidelines for programming assignment 1:
+
+50 points:
+
+30 points: Correctly sorts and prints. Must sort using mergesort.
+
+20 points: style, etc.
+	 5 points: good coding style - good use of whitespace,
+		   instructions aligned, comments
+	15 points: follows register usage and saving conventions
+
